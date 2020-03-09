@@ -19,7 +19,7 @@ const NewsItem = ({ item, className }) => {
 
   return (
     <RootView className={className}>
-      <ThumbnailImage source={{ url: item.urlToImage }} />
+      <ThumbnailImage source={{ uri: item.urlToImage }} />
       <ColumnView>
         <Link
           href={item.url}
@@ -57,11 +57,13 @@ const RootView = styled(View)`
   align-items: center;
   border: 1px solid black;
   padding: 12px;
+  width: 100%;
 `;
 
 const ThumbnailImage = styled(Image)`
   width: 85px;
   margin-right: 12px;
+  height: 50px;
 `;
 
 const RowView = styled(View)`
@@ -72,12 +74,15 @@ const RowView = styled(View)`
 
 const ColumnView = styled(View)`
   flex-direction: column;
+  flex: 1;
 `;
 
 const Link = styled(Text)`
   font-size: 12px;
   margin-bottom: 5px;
   color: blue;
+  flex-wrap: wrap;
+  flex: 1;
 `;
 
 const AuthorText = styled(Text)`
