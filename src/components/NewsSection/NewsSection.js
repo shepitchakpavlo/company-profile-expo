@@ -34,6 +34,7 @@ export default NewsSection;
 
 NewsItem.propTypes = {
   className: PropTypes.string,
+  style: PropTypes.object,
   companyName: PropTypes.string.isRequired,
 };
 
