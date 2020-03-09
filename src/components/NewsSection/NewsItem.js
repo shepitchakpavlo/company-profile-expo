@@ -12,7 +12,7 @@ const openLink = url => {
   } else {
     Linking.openURL(url);
   }
-}
+};
 
 const NewsItem = ({ item, className }) => {
   const dateToDisplay = new Date(item.publishedAt).toLocaleString();
