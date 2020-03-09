@@ -7,18 +7,21 @@ import View from '../View';
 import Text from '../Text';
 
 const openLink = url => {
-  if(Platform.OS === 'web'){
-    window.open(url)
+  if (Platform.OS === 'web') {
+    window.open(url);
   } else {
     Linking.openURL(url);
   }
 };
 
-const NewsItem = ({ item, className }) => {
+const decideStylingProp = ({ style, className }) =>
+  Platform.OS === 'web' ? {className} : {style};
+
+const NewsItem = ({ item, style, className }) => {
   const dateToDisplay = new Date(item.publishedAt).toLocaleString();
 
   return (
-    <RootView className={className}>
+    <RootView {...decideStylingProp({ className, style })}>
       <ThumbnailImage source={{ uri: item.urlToImage }} />
       <ColumnView>
         <Link
@@ -49,7 +52,7 @@ NewsItem.propTypes = {
     urlToImage: ST,
     publishedAt: ST,
   }),
-  className: PropTypes.string,
+  style: PropTypes.string,
 };
 
 const RootView = styled(View)`
