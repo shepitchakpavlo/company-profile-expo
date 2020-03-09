@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import SafeAreaView from 'react-native-safe-area-view';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { ScrollView } from 'react-native';
 import styled from 'styled-components';
-import { CompanyProfile, TabBar, View } from './components';
+import { CompanyProfile, TabBar } from './components';
 import companiesData from './companies';
 
 const companyList = Object.values(companiesData);
@@ -28,9 +29,8 @@ function App() {
 
 export default App;
 
-const RootView = styled(View)`
+const RootView = styled(ScrollView)`
   flex: 1;
   flex-direction: column;
-  align-items: stretch;
   
 `;
