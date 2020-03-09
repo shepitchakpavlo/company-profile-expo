@@ -13,7 +13,7 @@ function App() {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'always' }}>
         <RootView>
           <TabBar
             items={companyList}
