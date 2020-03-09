@@ -11,10 +11,10 @@ const CompanyProfile = ({ profile, className }) => {
 
   return (
     <RootView className={className}>
-      <Logo src={logo} />
+      <Logo source={{ uri: logo }} />
       <HeaderText>{name}</HeaderText>
       <BodyText>{description}</BodyText>
-      <NewsSection companyName={name}/>
+      <NewsSection companyName={name} />
     </RootView>
   );
 };
@@ -48,7 +48,9 @@ const BodyText = styled(Text)`
   margin-bottom: 12px;
 `;
 
-const Logo = styled(Image)`
+const Logo = styled(Image).attrs({resizeMode: 'contain'})`
   width: 100%;
   height: 100px;
+  border-width: 1px;
+  
 `;

@@ -31,5 +31,6 @@ export default App;
 const RootView = styled(View)`
   flex: 1;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  
 `;
