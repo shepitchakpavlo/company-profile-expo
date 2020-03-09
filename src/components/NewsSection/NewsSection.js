@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { ViewPropTypes } from 'react-native';
 import styled from 'styled-components';
 import View from '../View';
 import Text from '../Text';
@@ -32,9 +33,9 @@ const NewsSection = ({ companyName, className }) => {
 
 export default NewsSection;
 
-NewsItem.propTypes = {
+NewsSection.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.object,
+  style: ViewPropTypes.style,
   companyName: PropTypes.string.isRequired,
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Linking, Platform } from 'react-native';
 import PropTypes from 'prop-types';
+import { ViewPropTypes } from 'react-native';
 import Image from '../Image';
 import View from '../View';
 import Text from '../Text';
@@ -52,7 +53,7 @@ NewsItem.propTypes = {
     urlToImage: ST,
     publishedAt: ST,
   }),
-  style: PropTypes.string,
+  style: ViewPropTypes.style,
 };
 
 const RootView = styled(View)`
