@@ -6,7 +6,7 @@ import View from './View';
 
 const TabBar = ({ items, onSelect, selected }) => {
   const renderItem = ({ name, id }) => (
-    <TabItem isSelected={selected === id} onClick={() => onSelect(id)} key={id}>
+    <TabItem isSelected={selected === id} onPress={() => onSelect(id)} key={id}>
       {name}
     </TabItem>
   );
