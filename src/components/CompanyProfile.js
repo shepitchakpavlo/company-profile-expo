@@ -34,7 +34,6 @@ const RootView = styled(View)`
   flex: 1;
   flex-direction: column;
   align-items: stretch;
-  max-width: 400px;
   padding: 12px;
 `;
 
@@ -52,5 +51,4 @@ const Logo = styled(Image).attrs({resizeMode: 'contain'})`
   width: 100%;
   height: 100px;
   border-width: 1px;
-  
 `;
