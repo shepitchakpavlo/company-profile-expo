@@ -36,8 +36,7 @@ const decideBackgroundColor = props => (props.isSelected ? '#ccc' : '#f1f1f1');
 
 const TabItem = styled(Text)`
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   padding: 5px;
   border: 1px solid #ccc;
   background-color: ${decideBackgroundColor};
