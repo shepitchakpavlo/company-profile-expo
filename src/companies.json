@@ -1,0 +1,32 @@
+{
+  "0": {
+    "id": "0",
+    "name": "Google",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+    "description": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware."
+  },
+  "1": {
+    "id": "1",
+    "name": "Amazon",
+    "logo": "https://www.freelogodesign.org/file/app/blog/20180911090509731amazon_logo_RGB.jpg",
+    "description": "Amazon.com, Inc., is an American multinational technology company based in Seattle, Washington, United States, and has 750,000 total employees. It focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence."
+  },
+  "2": {
+    "id": "2",
+    "name": "Microsoft",
+    "logo": "https://agsol.com/wp-content/uploads/2018/09/new-microsoft-logo-SIZED-SQUARE.jpg",
+    "description": "Microsoft Corporation is an American multinational technology company with headquarters in Redmond, Washington. It develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services."
+  },
+  "3": {
+    "id": "3",
+    "name": "Apple",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+    "description": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. It is considered one of the Big Four technology companies, alongside Amazon, Google, and Microsoft."
+  },
+  "4": {
+    "id": "4",
+    "name": "Samsung",
+    "logo": "https://www.art-gsm.ru/upload/iblock/2f6/2f6abed28e64907d257a1f5fb461e312.png",
+    "description": "Samsung is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul. It comprises numerous affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol. Samsung was founded by Lee Byung-chul in 1938 as a trading company."
+  }
+}
