@@ -12,9 +12,9 @@ const NewsItem = ({ item, className }) => {
     <RootView className={className}>
       <ThumbnailImage src={item.urlToImage} />
       <ColumnView>
-        <Link href={item.url} target="_blank">
-          {item.title}
-        </Link>
+        {/*<Link href={item.url} target="_blank">*/}
+        {/*  {item.title}*/}
+        {/*</Link>*/}
         <RowView>
           <AuthorText>{item.author}</AuthorText>
           <DateText>{dateToDisplay}</DateText>
@@ -48,7 +48,6 @@ const RootView = styled(View)`
 
 const ThumbnailImage = styled(Image)`
   width: 85px;
-  object-fit: contain;
   margin-right: 12px;
 `;
 
@@ -62,17 +61,15 @@ const ColumnView = styled(View)`
   flex-direction: column;
 `;
 
-const Link = styled.a`
-  font-size: 12px;
-  margin-bottom: 5px;
-`;
+// const Link = styled.a`
+//   font-size: 12px;
+//   margin-bottom: 5px;
+// `;
 
 const AuthorText = styled(Text)`
   font-size: 10px;
-  font-style: italic;
 `;
 
 const DateText = styled(Text)`
   font-size: 10px;
-  font-style: oblique;
 `;

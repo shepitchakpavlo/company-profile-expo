@@ -29,7 +29,7 @@ TabBar.propTypes = {
 
 const RootView = styled(View)`
   height: 50px;
-  align-self: stretch;
+  align-self: stretch;flex-direction: row;
 `;
 
 const decideBackgroundColor = props => (props.isSelected ? '#ccc' : '#f1f1f1');
@@ -38,7 +38,6 @@ const TabItem = styled(Text)`
   flex: 1;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   padding: 5px;
   border: 1px solid #ccc;
   background-color: ${decideBackgroundColor};

@@ -51,5 +51,4 @@ const BodyText = styled(Text)`
 const Logo = styled(Image)`
   width: 100%;
   height: 100px;
-  object-fit: contain;
 `;
